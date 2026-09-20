@@ -4,7 +4,8 @@ Claude Code로 러닝 앱 **러닝그라운드**를 혼자 만들어 App Store·
 지금은 두 번째 앱 **정산야호**(약속 지키기 앱)를 Claude Code로 만들고 있습니다.
 무엇을 만들지와 판정 규칙은 제가 정하고, AI가 쓴 코드는 AI 검토자와 실제 폰으로 검증합니다.
 
-관심사는 **"왜 두 기기가 다른 답을 내는가"**입니다. 실시간 동기화, 화면이 꺼지면 사라지는 기록, 기기마다 다른 측정값 같은 문제입니다.
+관심사는 **왜 두 기기가 다른 답을 내는가**입니다. 실시간 동기화, 화면이 꺼지면 사라지는 기록, 기기마다 다른 측정값 같은 문제입니다.
+그래서 하는 일의 큰 덩어리는 **노이즈 섞인 센서 신호(걸음 수·보폭·속도·위치)로 사람의 동작을 판정하는 규칙**을 정하고, 그 규칙이 실제로 맞는지 실기기에서 확인하는 것입니다.
 
 ---
 
@@ -49,6 +50,20 @@ GPS로 러닝을 측정하고, 여러 대의 폰이 같은 시각에 출발해 �
 
 ---
 
+### 주로 쓰는 것
+
+| | |
+|---|---|
+| **앱** | React Native · Expo · TypeScript · Expo Router · React 19 |
+| **3D** | three.js · React Three Fiber · expo-gl — 러닝그라운드의 3D 화면(달린 거리를 천체로 그리는 탭). 지금은 탭바에서 내렸지만 [코드는 저장소에 있습니다](https://github.com/Min-heee/running-ground/tree/main/src/features/universe/three) |
+| **백엔드** | Node.js(`node:http`) · PostgreSQL · Docker · Caddy |
+| **네이티브** | Swift (iOS) · Kotlin (Android) 백그라운드 위치 추적 모듈(Claude Code와 함께) |
+| **인프라 / 배포** | DigitalOcean · Cloudflare · EAS Build · EAS Update(스토어 심사 없이 앱 코드 갱신) |
+| **AI 개발 도구** | Claude Code(병렬 에이전트 검증, git worktree 병렬 세션) · OpenAI Codex(2026년 4~5월 코드 감사) |
+| **자동화** | 배포 전 점검 스크립트 · headless Chrome + ffmpeg 영상 렌더 · AI 코딩 세션 로그에서 토큰 사용량을 중복 없이 세는 개인 집계 도구 |
+
+---
+
 ### AI와 일하는 방식
 
 - **구현은 Claude Code와, 결정은 제가.** 러닝그라운드는 6월 이후 커밋의 88%, 정산야호는 커밋 전부를 Claude Code와 함께 썼습니다.
@@ -60,16 +75,4 @@ GPS로 러닝을 측정하고, 여러 대의 폰이 같은 시각에 출발해 �
 - **마지막은 실기기입니다.** 두 폰을 나란히 들고 뛰고, 부정행위 판정은 직접 자전거를 타서 확인합니다.
   코드만 보면 맞는데 실제 폰에서는 달랐던 일을 사례연구에 적었습니다.
 
----
-
-### 주로 쓰는 것
-
-| | |
-|---|---|
-| **앱** | React Native · Expo · TypeScript · Expo Router · React 19 |
-| **백엔드** | Node.js(`node:http`) · PostgreSQL · Docker · Caddy |
-| **네이티브** | Swift (iOS) · Kotlin (Android) 백그라운드 위치 추적 모듈(Claude Code와 함께) |
-| **인프라 / 배포** | DigitalOcean · Cloudflare · EAS Build · EAS Update(스토어 심사 없이 앱 코드 갱신) |
-| **3D (실험)** | three.js · React Three Fiber — 러닝그라운드에 3D 화면을 약 3주 넣었다가 뺌 |
-| **AI 개발 도구** | Claude Code(병렬 에이전트 검증, git worktree 병렬 세션) · OpenAI Codex(2026년 4~5월 코드 감사) |
-| **자동화** | 배포 전 점검 스크립트 · headless Chrome + ffmpeg 영상 렌더 · AI 코딩 세션 로그에서 토큰 사용량을 중복 없이 세는 개인 집계 도구 |
+<sub>GitHub 기여 그래프는 최근 1년 · 공개 저장소 기준이라 위 커밋 수치와 다릅니다.</sub>
