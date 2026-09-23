@@ -11,6 +11,14 @@ Claude Code로 러닝 앱 **러닝그라운드**를 혼자 만들어 App Store·
 
 ### 지금 만들고 있는 것
 
+**[품새 판정기](https://github.com/Min-heee/poomsae-judge)** · 브라우저 동작 판정 데모 · [바로 열어 보기](https://poomsae-judge.vercel.app)
+
+웹캠이나 녹화된 관절 좌표로 태권도 기본 동작(주춤서기 · 앞차기)을 공개된 규칙으로 채점합니다.
+점수 옆에 측정값과 경계값을 같이 보여 줘서 왜 그 점수인지 읽히게 했고, 신뢰도가 낮거나 촬영 각도가 규칙과 다르면 점수를 매기지 않고 **판정 보류**로 떨어뜨립니다.
+카메라 권한 없이도 전부 확인할 수 있게 합성 샘플 재생이 기본 모드입니다.
+
+`Next.js` · `TypeScript` · `MediaPipe`(관절 33개) · `three.js` — 판정 규칙은 순수 함수로 분리해 테스트 303개로 고정했습니다. 기획서를 먼저 커밋하고 구현했습니다.
+
 **[러닝그라운드](https://github.com/Min-heee/running-ground)** · 러닝 앱 · 운영 중 ·
 [App Store](https://apps.apple.com/kr/app/id6762328694) · [Google Play](https://play.google.com/store/apps/details?id=com.minheee.runnigapp)
 
@@ -47,14 +55,6 @@ GPS로 러닝을 측정하고, 여러 대의 폰이 같은 시각에 출발해 �
 - 3단계: Supabase 서버 연동 — 클라이언트와 서버 규칙(로컬 PostgreSQL로 검증)까지 main 병합 (2026-09-19), 실제 서버 연결은 남음
 
 `Expo` · `TypeScript` · `Supabase` — 지각 판정과 정산 규칙은 순수 함수로 떼어 테스트합니다. 커밋 전부 Claude Code와 함께 썼습니다.
-
-**[품새 판정기](https://github.com/Min-heee/poomsae-judge)** · 브라우저 동작 판정 데모 · [바로 열어 보기](https://poomsae-judge.vercel.app)
-
-웹캠이나 녹화된 관절 좌표로 태권도 기본 동작(주춤서기 · 앞차기)을 공개된 규칙으로 채점합니다.
-점수 옆에 측정값과 경계값을 같이 보여 줘서 왜 그 점수인지 읽히게 했고, 신뢰도가 낮거나 촬영 각도가 규칙과 다르면 점수를 매기지 않고 **판정 보류**로 떨어뜨립니다.
-카메라 권한 없이도 전부 확인할 수 있게 합성 샘플 재생이 기본 모드입니다.
-
-`Next.js` · `TypeScript` · `MediaPipe`(관절 33개) · `three.js` — 판정 규칙은 순수 함수로 분리해 테스트 281개로 고정했습니다. 기획서를 먼저 커밋하고 구현했습니다.
 
 ---
 
