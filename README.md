@@ -46,7 +46,7 @@
 
 | 도구 | 맡은 일 | 지금 상태 |
 |---|---|---|
-| [한창구](https://github.com/Min-heee/hanchanggu) | 환자가 먼저 보낸 문의의 답장 초안, 직원 질문에 답하기 | 시연은 미리 녹화한 AI 답으로 돌아감 |
+| [한창구](https://github.com/Min-heee/hanchanggu) | 환자가 먼저 보낸 문의의 답장 초안, 직원 질문에 답하기 | [바로 열기](https://hanchanggu.vercel.app) — 미리 녹화한 AI 답으로 돌아감 |
 | [다시봄](https://github.com/Min-heee/dasibom) | 병원이 먼저 거는 사후관리 연락 | 예상 결과 표를 사람이 확인하기 전 |
 | [같은각도](https://github.com/Min-heee/same-angle) | 경과 사진의 촬영 조건 맞추기 | 아이폰 점검 전, 촬영 기능은 아직 없음 |
 
@@ -54,7 +54,7 @@
 
 #### 한창구 · 문의함과 사내 Q&A
 
-[설계 문서](https://github.com/Min-heee/hanchanggu/blob/main/docs/PRD.md) · [코드](https://github.com/Min-heee/hanchanggu)
+[바로 열어 보기](https://hanchanggu.vercel.app) · [설계 문서](https://github.com/Min-heee/hanchanggu/blob/main/docs/PRD.md) · [코드](https://github.com/Min-heee/hanchanggu)
 
 - 메신저, 홈페이지 폼, 예약 요청사항, 리뷰로 흩어진 문의를 직원 화면 하나에서 봅니다.
 - 금액은 AI가 쓰지 않습니다. 병원 가격표에서 그대로 채웁니다.
