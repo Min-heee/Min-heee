@@ -47,7 +47,7 @@
 | 도구 | 맡은 일 | 지금 상태 |
 |---|---|---|
 | [한창구](https://github.com/Min-heee/hanchanggu) | 환자가 먼저 보낸 문의의 답장 초안, 직원 질문에 답하기 | [바로 열기](https://hanchanggu.vercel.app) — 미리 녹화한 AI 답으로 돌아감 |
-| [다시봄](https://github.com/Min-heee/dasibom) | 병원이 먼저 거는 사후관리 연락 | 예상 결과 표를 사람이 확인하기 전 |
+| [다시봄](https://github.com/Min-heee/dasibom) | 병원이 먼저 거는 사후관리 연락 | [바로 열기](https://dasibom-clinic.vercel.app) — 예상 결과 표는 사람이 확인하기 전 |
 | [같은각도](https://github.com/Min-heee/same-angle) | 경과 사진의 촬영 조건 맞추기 | 아이폰 점검 전, 촬영 기능은 아직 없음 |
 
 실제 병원이나 환자 정보는 쓰지 않았습니다. 가상 의원 '샘플의원'의 문서와 지어낸 데이터만 씁니다.
@@ -62,7 +62,7 @@
 
 #### 다시봄 · 사후관리 연락
 
-[설계 문서](https://github.com/Min-heee/dasibom/blob/main/docs/PRD.md) · [코드](https://github.com/Min-heee/dasibom)
+[바로 열어 보기](https://dasibom-clinic.vercel.app) · [설계 문서](https://github.com/Min-heee/dasibom/blob/main/docs/PRD.md) · [코드](https://github.com/Min-heee/dasibom)
 
 - 코디네이터가 아침에 열면 오늘 연락할 환자가 이유와 함께 나옵니다. 시연 날 아침은 27명입니다.
 - 경과 진료일은 D+1, D+7, 4주, 6개월, 1년입니다.
